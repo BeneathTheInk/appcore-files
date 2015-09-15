@@ -1,15 +1,19 @@
 {
 	"name": "@beneaththeink/appcore-files",
-	"version": "1.1.2",
+	"version": "1.2.0",
 	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://beneaththeink.git.beanstalkapp.com/appcore-files.git"
+	},
 	"main": "./lib/index.js",
 	"browser": {
 		"./http-route.js": false,
 		"form-data": false
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://beneaththeink.git.beanstalkapp.com/appcore-files.git"
+	"scripts": {
+		"lint": "jshint lib/",
+		"prepublish": "npm run lint"
 	},
 	"dependencies": {
 		"arraybuffer-to-buffer": "0.0.1",
@@ -22,7 +26,9 @@
 		"multiparty": "~4.1.2",
 		"raw-body": "~2.1.2",
 		"streamifier": "~0.1.1",
-		"underscore": "~1.8.3",
-		"uuid": "~2.0.1"
+		"underscore": "~1.8.3"
+	},
+	"devDependencies": {
+		"jshint": "~2.8.0"
 	}
 }
