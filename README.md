@@ -7,7 +7,7 @@ This is a file handling abstraction for Appcore, allowing easy upload of large d
 Use this package as a plugin on any application:
 
 ```js
-app.use(require("@beneaththeink/appcore-files"));
+app.use(require("appcore-files"));
 ```
 
 This will attach the `file` object to the app.
